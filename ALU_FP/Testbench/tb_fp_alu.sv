@@ -1,3 +1,15 @@
+/****************************************************************************************
+ * Archivo       : tb_fp_alu.sv
+ * Proyecto      : Unidad en punto flotante estandar IEEE 754
+ * Autor         : Samuel Cabrera A
+ * Fecha         : 1S 2025
+ * Descripción   :
+ * Testbench para verificar la ALU en punto flotante IEEE-754 (binary32) mediante
+ * operaciones aritméticas (FADD, FSUB, FMUL, FMA) y comparaciones (FEQ, FLT, FLE).
+ * Incluye redondeo y pruebas con valores normales, subnormales, ceros,
+ * infinitos y NaN. Se crean tareas para cada operacion y structs para los testcases
+ * Se muestra en resumen de resultados obtenidos al final (PASS, FAIL, PRECISION)
+ ****************************************************************************************/
 
 module tb_fp_alu;
 
